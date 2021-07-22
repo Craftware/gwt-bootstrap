@@ -10,18 +10,19 @@
  */
 
 
-var i = 'icon-';
-var allclasses = [];
-$('section#all-icons ul.the-icons li i').each(function () {
+var i = 'fa-';
+var uniqueClasses = new Set();
+$('#icons i').each(function () {
     var c = $(this).attr('class');
     c = c.substr(c.indexOf(i) + i.length);
-    allclasses.push(c);
+    uniqueClasses.add(c);
 });
 
+var allclasses = Array.from(uniqueClasses);
 allclasses.sort();
 
 $(allclasses).each(function () {
     var c = this;
-    console.log(c.replace("-", "_").replace("-", "_").replace("-", "_").toUpperCase() + '("' + c + '"),');
+    console.log(c.replaceAll("-", "_").toUpperCase() + '("' + c + '"),');
 });
 

@@ -47,7 +47,7 @@ public class TimeBoxAppended extends AppendButton implements HasValue<Date>, Has
     {
         this.box = new TimeBoxAppendedAdapter();
         icon = new AddOn();
-        icon.setIcon(IconType.TIME);
+        icon.setIcon(IconType.CLOCK_O);
         add(box);
         add(icon);
     }
