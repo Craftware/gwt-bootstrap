@@ -328,21 +328,21 @@
 
     <reporting>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.8.1</version>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                    <locale>en</locale>
-                    <linksource>true</linksource>
-                    <validateLinks>true</validateLinks>
-                    <links>
-                        <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.4</link>
-                    </links>
-                    <overview>${basedir}/src/main/java/com/github/gwtbootstrap/overview.html</overview>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>2.8.1</version>-->
+<!--                <configuration>-->
+<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
+<!--                    <locale>en</locale>-->
+<!--                    <linksource>true</linksource>-->
+<!--                    <validateLinks>true</validateLinks>-->
+<!--                    <links>-->
+<!--                        <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.4</link>-->
+<!--                    </links>-->
+<!--                    <overview>${basedir}/src/main/java/com/github/gwtbootstrap/overview.html</overview>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
@@ -616,29 +616,29 @@
                 </configuration>
             </plugin>
             <!-- for javadoc generate -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.8.1</version>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                    <locale>en</locale>
-                    <linksource>true</linksource>
-                    <validateLinks>true</validateLinks>
-                    <links>
-                        <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.4</link>
-                    </links>
-                    <overview>${basedir}/src/main/java/com/github/gwtbootstrap/overview.html</overview>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>2.8.1</version>-->
+<!--                <configuration>-->
+<!--                    <encoding>${project.build.sourceEncoding}</encoding>-->
+<!--                    <locale>en</locale>-->
+<!--                    <linksource>true</linksource>-->
+<!--                    <validateLinks>true</validateLinks>-->
+<!--                    <links>-->
+<!--                        <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.4</link>-->
+<!--                    </links>-->
+<!--                    <overview>${basedir}/src/main/java/com/github/gwtbootstrap/overview.html</overview>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>jar</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
 
             <!-- for generate sorces.jar -->
             <plugin>
