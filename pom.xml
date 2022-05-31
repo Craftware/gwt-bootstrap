@@ -29,6 +29,13 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>gwt-bootstrap</id>
+            <url>https://pkgs.dev.azure.com/eduvem/kornell/_packaging/gwt-bootstrap/maven/v1</url>
+        </repository>
+    </distributionManagement>
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
