@@ -279,7 +279,7 @@
     <!-- project settings -->
     <properties>
         <!-- Convenience property to set the GWT version -->
-        <gwtVersion>2.4.0</gwtVersion>
+        <gwtVersion>2.10.0</gwtVersion>
         <webappDirectory>src/main/webapp</webappDirectory>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.sites.plugin.version>0.8</github.sites.plugin.version>
@@ -294,18 +294,8 @@
         <dependency>
             <groupId>com.googlecode.gwt-test-utils</groupId>
             <artifactId>gwt-test-utils</artifactId>
-            <version>0.39</version>
+            <version>0.63</version>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.gwt</groupId>
-                    <artifactId>gwt-user</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.google.gwt</groupId>
-                    <artifactId>gwt-dev</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -401,7 +391,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>gwt-maven-plugin</artifactId>
-                        <version>2.4.0</version>
+                        <version>2.10.0</version>
                         <executions>
                             <execution>
                                 <goals>
@@ -459,7 +449,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>gwt-maven-plugin</artifactId>
-                        <version>2.4.0</version>
+                        <version>2.10.0</version>
                         <executions>
                             <execution>
                                 <goals>
@@ -587,7 +577,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>2.4.0</version>
+                <version>2.10.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -801,7 +791,7 @@ warSrcDirIsOutput=false
                                             gwt-maven-plugin
                                         </artifactId>
                                         <versionRange>
-                                            [2.4.0,)
+                                            [2.10.0,)
                                         </versionRange>
                                         <goals>
                                             <goal>resources</goal>
