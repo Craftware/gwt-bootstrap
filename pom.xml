@@ -16,23 +16,31 @@
     <description>A GWT Library that provides the widgets of Twitter Bootstrap.</description>
     <url>http://gwtbootstrap.github.com/</url>
 
-    <repositories>
-        <repository>
-            <id>gwt-bootstrap</id>
-            <url>https://pkgs.dev.azure.com/eduvem/kornell/_packaging/gwt-bootstrap/maven/v1</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>gwt-bootstrap</id>-->
+<!--            <url>https://pkgs.dev.azure.com/eduvem/kornell/_packaging/gwt-bootstrap/maven/v1</url>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>gwt-bootstrap</id>-->
+<!--            <url>https://pkgs.dev.azure.com/eduvem/kornell/_packaging/gwt-bootstrap/maven/v1</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
     <distributionManagement>
         <repository>
-            <id>gwt-bootstrap</id>
-            <url>https://pkgs.dev.azure.com/eduvem/kornell/_packaging/gwt-bootstrap/maven/v1</url>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Craftware/gwt-bootstrap</url>
         </repository>
     </distributionManagement>
 
